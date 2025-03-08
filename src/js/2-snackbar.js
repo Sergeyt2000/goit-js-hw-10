@@ -20,7 +20,7 @@ function onSubmit(evt) {
       titleColor: '#fff',
       close: true,
       closeColor: '#fff',
-      iconUrl: '../img/icons/caution.png',
+      iconUrl: '/img/icons/caution.png',
       message: 'You forgot important data',
     });
     formEl.reset();
@@ -46,7 +46,7 @@ function onSubmit(evt) {
         messageColor: '#fff',
         close: true,
         closeColor: '#fff',
-        iconUrl: '../img/icons/ok.png',
+        iconUrl: '/img/icons/ok.png',
         message: `✅ Fulfilled promise in ${timeDelay}ms`,
       });
     })
@@ -60,7 +60,7 @@ function onSubmit(evt) {
         titleColor: '#fff',
         close: true,
         closeColor: '#fff',
-        iconUrl: '../img/icons/error.png',
+        iconUrl: '/img/icons/error.png',
         message: `❌ Rejected promise in ${timeDelay}ms`,
       });
     })
