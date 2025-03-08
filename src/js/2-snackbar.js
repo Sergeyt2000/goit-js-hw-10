@@ -1,6 +1,10 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import okIcon from '../img/icons/ok.png';
+import cautionIcon from '../img/icons/caution.png';
+import errorIcon from '../img/icons/error.png';
+
 const formEl = document.querySelector('.form');
 const delayInputEl = document.querySelector('.form-input');
 
@@ -20,7 +24,7 @@ function onSubmit(evt) {
       titleColor: '#fff',
       close: true,
       closeColor: '#fff',
-      iconUrl: '/img/icons/caution.png',
+      iconUrl: cautionIcon,
       message: 'You forgot important data',
     });
     formEl.reset();
@@ -46,7 +50,7 @@ function onSubmit(evt) {
         messageColor: '#fff',
         close: true,
         closeColor: '#fff',
-        iconUrl: '/img/icons/ok.png',
+        iconUrl: okIcon,
         message: `✅ Fulfilled promise in ${timeDelay}ms`,
       });
     })
@@ -60,7 +64,7 @@ function onSubmit(evt) {
         titleColor: '#fff',
         close: true,
         closeColor: '#fff',
-        iconUrl: '/img/icons/error.png',
+        iconUrl: errorIcon,
         message: `❌ Rejected promise in ${timeDelay}ms`,
       });
     })
