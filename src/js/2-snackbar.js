@@ -1,9 +1,9 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import okIcon from '../img/icons/ok.png';
-import cautionIcon from '../img/icons/caution.png';
-import errorIcon from '../img/icons/error.png';
+import okIcon from '/img/icons/ok.png';
+import cautionIcon from '/img/icons/caution.png';
+import errorIcon from '/img/icons/error.png';
 
 const formEl = document.querySelector('.form');
 const delayInputEl = document.querySelector('.form-input');
